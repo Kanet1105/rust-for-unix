@@ -21,9 +21,13 @@ cargo install wasm-pack
 
 https://rustwasm.github.io/wasm-pack/installer/
 
-4. Install "basic-http-server" (and build with wasm-pack instead of "Trunk").
+4. Install "basic-http-server"
+```
+cargo install basic-http-server
+```
+
+5. Build and run locally.
 ```
 wasm-pack build --target web
 basic-http-server
 ```
-
