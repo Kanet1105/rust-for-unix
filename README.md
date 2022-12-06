@@ -15,9 +15,15 @@ rustup target add wasm32-unknown-unknown
 ```
 cargo install wasm-pack
 ```
+> :warning: **If you are on Windows, "openssl" crate fails to build
+>  due to the path separator being "\\". Instead of running the cargo command,
+>  download the windows binary for wasm-pack from the following link.**
+
+https://rustwasm.github.io/wasm-pack/installer/
 
 4. Install "basic-http-server" (and build with wasm-pack instead of "Trunk").
 ```
 wasm-pack build --target web
 basic-http-server
 ```
+
